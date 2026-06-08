@@ -7,14 +7,14 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial;
       background: linear-gradient(135deg, #ffdde1, #ee9ca7);
       text-align: center;
       color: #333;
     }
 
     header {
-      padding: 50px;
+      padding: 40px;
       color: white;
     }
 
@@ -22,7 +22,7 @@
       font-size: 40px;
     }
 
-    .mensaje {
+    .card {
       background: white;
       margin: 20px auto;
       padding: 20px;
@@ -35,22 +35,17 @@
     .fotos {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
       flex-wrap: wrap;
       margin: 20px;
     }
 
     .fotos img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 15px;
       box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-
-    .fotos img:hover {
-      transform: scale(1.1);
     }
 
     button {
@@ -61,18 +56,13 @@
       border-radius: 10px;
       cursor: pointer;
       font-size: 16px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     button:hover {
       background: #c2185b;
     }
 
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      color: white;
-    }
   </style>
 </head>
 
@@ -80,12 +70,12 @@
 
   <header>
     <h1>💖 Para Ti 💖</h1>
-    <p>Una página hecha con mucho cariño</p>
+    <p>Hecho con mucho cariño</p>
   </header>
 
-  <!-- 🎵 MÚSICA -->
+  <!-- 🎵 MÚSICA (IMPORTANTE: ruta correcta) -->
   <audio id="musica" loop>
-    <source src="musica/cancion.mp3" type="audio/mpeg">
+    <source src="./musica/cancion.mp3" type="audio/mpeg">
   </audio>
 
   <button onclick="document.getElementById('musica').play()">
@@ -93,24 +83,20 @@
   </button>
 
   <!-- 💌 MENSAJE -->
-  <div class="mensaje">
-    <h2>💌 Mensaje Especial</h2>
+  <div class="card">
+    <h2>💌 Mensaje especial</h2>
     <p>
-      Gracias por estar en mi vida 💖  
-      Esta página es solo un pequeño detalle para ti ✨  
+      Gracias por ser parte de mi vida 💖<br>
+      Esta página es solo para ti ✨<br>
       Te quiero mucho 💕
     </p>
   </div>
 
   <!-- 📸 FOTOS -->
   <div class="fotos">
-    <img src="fotos/foto1.jpg" alt="foto1">
-    <img src="fotos/foto2.jpg" alt="foto2">
+    <img src="./fotos/foto1.jpg">
+    <img src="./fotos/foto2.jpg">
   </div>
-
-  <footer>
-    Hecho con 💖 para ti
-  </footer>
 
 </body>
 </html>
