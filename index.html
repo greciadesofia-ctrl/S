@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto con Música</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: linear-gradient(135deg, #ffe0ec, #ffd1dc);
+      padding: 60px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #e91e63;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>💖 Mi página con música</h1>
+    <p>Presiona el botón para reproducir la canción</p>
+
+    <button onclick="document.getElementById('musica').play()">
+      ▶ Reproducir música
+    </button>
+  </div>
+
+  <!-- 🎵 AUDIO (IMPORTANTE: mismo nombre que tu archivo) -->
+  <audio id="musica" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+</body>
+</html>
